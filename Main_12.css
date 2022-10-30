@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -8,6 +9,11 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    color: #292929;
+}
+
+p {
+    line-height: 150%;
 }
 
 .wrapper {
@@ -91,6 +97,12 @@ body {
     border-radius: 4px;
     color: #fff;
     transition: background-color .2s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button_big {
+    padding: 20px 50px;
 }
 
 .button:hover {
@@ -99,4 +111,213 @@ body {
 
 .button:active {
     background-color: #01845E;
+}
+
+.first__mobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        width: 768px;
+    }
+
+    .header {
+        height: 128px;
+    }
+
+    .first__nav {
+        margin-top: 17px;
+        width: 100%;
+    }
+
+    .first__nav ul li {
+        margin-right: 150px;
+    }
+}
+
+@media (max-width: 320px) {
+    .wrapper {
+        width: 290px;
+    }
+
+    .header {
+        height: 357px;
+    }
+
+    .first__logotype,
+    .first__nav,
+    .first__login {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .first__login .link,
+    .first__nav {
+        display: none;
+    }
+
+    .first__mobile {
+        display: block;
+        margin-top: 24px;
+    }
+
+    .first__mobile ul {
+        list-style: none;
+    }
+
+    .first__login .button {
+        margin-top: 40px;
+    }
+
+    .first__mobile ul li {
+        margin-bottom: 10px;
+    }
+
+    .first__mobile ul li:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 110%;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 115%;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+/* Блок с задним фоном */
+
+.first__background {
+    background-image: url('../images/bg.jpg');
+}
+
+.first__content {
+    padding: 268px 0;
+    max-width: 427px;
+}
+
+.first__content h1 {
+    color: #01996D;
+}
+
+.first__content p {
+    margin-top: 24px;
+}
+
+.first__content .button {
+    margin-top: 60px;
+}
+
+/* Текстовый блок */
+
+.works {
+    margin-top: 150px;
+    margin-bottom: 70px;
+    overflow: hidden;
+}
+
+.works__left, .works__right {
+    width: 50%;
+    float: left;
+}
+
+.works__left {
+    padding-right: 52px;
+}
+
+.works__left h2 {
+    color: #01996D;
+}
+
+.works__subtitle {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.works__right p {
+    margin-top: 40px;
+}
+
+/* Карточки */
+
+.cards {
+    overflow: hidden;
+    margin-top: 70px;
+    margin-bottom: 150px;
+}
+
+.card {
+    width: 390px;
+    float: left;
+    margin-right: 100px;
+}
+
+.card:last-of-type {
+    margin-right: 0;
+}
+
+.card__number {
+    font-family: 'Roboto Slab', serif;
+    font-size: 144px;
+    color: rgba(1, 153, 109, 0.2);
+}
+
+.card h3 {
+    margin-top: -22px;
+}
+
+.card p {
+    margin-top: 10px;
+    line-height: 150%;
+}
+
+.card img {
+    margin-top: 40px;
+    border-radius: 17px;
+    max-width: 100%;
+}
+
+/* Блок история */
+
+.history {
+    margin: 150px 0;
+    background-color: #245852;
+    padding: 150px 0;
+    overflow: hidden;
+    color: #fff;
+}
+
+.history__left, .history__right {
+    width: 50%;
+    float: left;
+}
+
+.history__right img {
+    max-width: 100%;
+    border-radius: 17px;
+    overflow: hidden;
+}
+
+.history p {
+    margin-top: 24px;
+}
+
+.history .button {
+    margin-top: 50px;
 }
